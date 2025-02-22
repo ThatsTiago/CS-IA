@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyChain Account</title>
+    <link rel="stylesheet" href="account.css">
+</head>
+
+<body>
+    <h1>KeyChain! Account</h1>
+
+    <h2>Current logged in user: <span id="userEmailDisplay"></span></h2>
+
+    <a href="/"><button>go back</button></a>
+    
+    <!-- Login Form -->
+    <div>
+        <h2>Login</h2>
+        <input type="email" id="loginEmail" placeholder="Email">
+        <input type="password" id="loginPassword" placeholder="Password">
+        <button id="loginBtn">Login</button>
+    </div>
+
+    <!-- Register Form -->
+    <div>
+        <h2>Register</h2>
+        <input type="email" id="registerEmail" placeholder="Email">
+        <input type="password" id="registerPassword" placeholder="Password">
+        <button id="registerBtn">Register</button>
+    </div>
+
+    <button id="logoutBtn">Logout</button>
+    
+
+    <script src="account.js"></script>
+</body>
+</html>

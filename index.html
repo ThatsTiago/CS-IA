@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyChain Passwords</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    html, body {
+        width: 400px;
+        height: 600px;
+    }
+</style>
+
+
+<body>
+    <h1>KeyChain!</h1>
+
+    <p>Log In and add a key (password) to your keychain!</p>
+
+    <button><a href="./header/account.html">Account</a></button></a>
+
+    <button id="keyBtn" type="button">Press here to Create a Key</button>
+
+<!-- key modal -->
+    <div class="modal" id="keyModal">
+        <div class="modalContent">
+            <span class="close" id="keyClose">&times;</span>
+            <h3>Website Name:</h3>
+                <input type="text" id="websiteName" placeholder="Website Name">
+            <h3>Website E-Mail:</h3>
+                <input type="email" id="websiteEmail" placeholder="Website Email">
+            <h3>Website Password:</h3>
+                <input type="text" id="websitePassword" placeholder="Website Password">
+                <button id="addPasswordBtn">Save Password</button>
+        </div>
+    </div>
+
+    <div class="modal" id="ChainModal">
+
+    </div>
+
+    <h2>My Passwords:</h2>
+
+    <div id="passwordsList"></div>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
